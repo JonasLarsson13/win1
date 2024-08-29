@@ -1,0 +1,51 @@
+.custom-btn {
+    background-color: var(--primary);
+    color: white;
+    padding: 14px 30px;
+    outline: 3px solid transparent;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    transition: all 0.3s ease;
+
+    &.arrow:hover {
+        gap: 1rem;
+        outline: 3px solid var(--stroke);
+    }
+}
+
+.custom-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 60px;
+    min-height: 60px;
+    background-color: var(--icon-bg);
+    border-radius: 8px;
+
+    img {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+.custom-avatar {
+    display: flex;
+    gap: 0.6rem;
+    height: 48px;
+
+    b {
+        line-height: 1.4;
+        font-weight: 500;
+        font-size: 14px;
+    }
+
+    p {
+        padding: 0 !important;
+        color: var(--light-text);
+        font-size: 12px;
+    }
+}
