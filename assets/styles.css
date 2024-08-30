@@ -20,6 +20,7 @@
   --system-info: #4C82F7;
   --background-color: white;
   --secoundary-background-color: #F3F6FF;
+  --custom-bg-faq-color: white;
   --text-color: var(--gray-800);
   --secoundary-text-color: var(--gray-700);
   --stroke: var(--gray-300);
@@ -29,6 +30,7 @@
 .dark {
   --background-color: var(--gray-900);
   --secoundary-background-color: rgba(255, 255, 255, 0.04);
+  --custom-bg-faq-color: rgba(255, 255, 255, 0.04);
   --text-color: var(--white);
   --secoundary-text-color: rgba(255, 255, 255, 0.7);
   --stroke: #e2e5f12e;
@@ -758,8 +760,276 @@ main .testimonials__container aside .stars {
 
 footer {
   height: auto;
-  min-height: 400px;
   width: 100%;
+  padding: 5rem 2rem 2rem 2rem;
+}
+footer section {
+  width: 100%;
+  max-width: 1296px;
+  margin: 0 auto;
+}
+footer section .small-devices-header {
+  display: none;
+  flex-direction: column;
+  gap: 1rem;
+  padding-bottom: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+footer section .small-devices-header h1 {
+  font-size: 24px;
+  font-weight: 500;
+  width: 100%;
+  text-align: center;
+}
+footer section .small-devices-header p {
+  font-size: 16px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+footer section .main-content {
+  display: flex;
+  gap: 10rem;
+}
+footer section .main-content .left-side {
+  width: auto;
+  min-width: 417px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+footer section .main-content .left-side h1 {
+  font-size: 24px;
+  font-weight: 500;
+}
+footer section .main-content .left-side p {
+  font-size: 16px;
+}
+footer section .main-content .left-side .contact-details {
+  display: flex;
+  justify-content: space-between;
+}
+footer section .main-content .left-side .contact-details figure {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1.2rem;
+  width: 196px;
+  height: auto;
+  min-height: 166px;
+  border: 1px solid var(--stroke);
+  border-radius: 8px;
+  padding: 1.2rem;
+}
+footer section .main-content .left-side .contact-details figure p {
+  font-size: 13px;
+}
+footer section .main-content .left-side .contact-details figure button {
+  background: transparent;
+  border: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: #6366F1;
+  cursor: pointer;
+}
+footer section .main-content .left-side .contact-details figure:nth-child(2) button {
+  color: #22C55E;
+}
+footer section .main-content .left-side .contact-details .sd {
+  display: none;
+  margin: 0 auto;
+}
+footer section .main-content .right-side {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+footer section .main-content .right-side div {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--custom-bg-faq-color);
+  box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+}
+footer section .main-content .right-side div header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  cursor: pointer;
+}
+footer section .main-content .right-side div header h3 {
+  font-size: 16px;
+  font-weight: 500;
+}
+footer section .main-content .right-side div header figure {
+  width: 36px;
+  min-width: 36px;
+  height: 36px;
+  min-height: 36px;
+  background: var(--secoundary-background-color);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer section .main-content .right-side div header figure svg {
+  transition: all 0.2s ease-in-out;
+}
+footer section .main-content .right-side div span {
+  position: relative;
+  height: 0px;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  color: var(--secoundary-text-color);
+  font-size: 14px;
+}
+footer section .main-content .right-side div.active header figure {
+  background: var(--primary);
+}
+footer section .main-content .right-side div.active header figure svg {
+  transform: rotate(180deg);
+}
+footer section .main-content .right-side div.active header figure svg path {
+  fill: white;
+}
+footer section .main-content .right-side div.active span {
+  height: auto;
+  padding: 1rem;
+  padding-top: 0;
+}
+@media screen and (max-width: 1150px) {
+  footer section .main-content {
+    gap: 4rem;
+  }
+}
+footer section .subscibe-content {
+  width: 100%;
+  padding: 2rem 6rem;
+  background-color: var(--secoundary-background-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 8px;
+  margin-top: 6rem;
+}
+footer section .subscibe-content .left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+footer section .subscibe-content .left .mobile {
+  display: none;
+}
+footer section .subscibe-content .left h2 {
+  width: auto;
+  max-width: 416px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+@media screen and (max-width: 990px) {
+  footer section .subscibe-content .left .mobile {
+    display: block;
+  }
+  footer section .subscibe-content .left .desktop {
+    display: none;
+  }
+}
+footer section .subscibe-content form {
+  position: relative;
+  display: flex;
+  background-color: var(--custom-bg-faq-color);
+  overflow: hidden;
+  border-radius: 8px;
+  border: 1px solid var(--stroke);
+}
+footer section .subscibe-content form div {
+  position: relative;
+  height: 43px;
+  width: 300px;
+}
+footer section .subscibe-content form div input {
+  position: relative;
+  height: 43px;
+  width: 100%;
+  border: none;
+  outline: none;
+  z-index: 2;
+  padding-left: 36px;
+  background: transparent;
+  color: var(--text-color);
+}
+footer section .subscibe-content form div input::placeholder {
+  color: #B4B7C9;
+}
+footer section .subscibe-content form div svg {
+  position: absolute;
+  z-index: 10;
+  top: calc(50% - 10px);
+  left: 10px;
+}
+footer section .subscibe-content form button {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+footer section .copyright {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+  color: var(--light-text);
+  padding-top: 2.6rem;
+}
+@media screen and (max-width: 900px) {
+  footer section .small-devices-header {
+    display: flex;
+  }
+  footer section .main-content {
+    flex-wrap: wrap-reverse;
+  }
+  footer section .main-content .left-side {
+    width: 100%;
+  }
+  footer section .main-content .left-side h1 {
+    display: none;
+  }
+  footer section .main-content .left-side .desktop {
+    display: none;
+  }
+  footer section .main-content .left-side .contact-details figure {
+    width: 48%;
+  }
+  footer section .subscibe-content {
+    padding: 2rem;
+  }
+}
+@media screen and (max-width: 650px) {
+  footer section .subscibe-content {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.6rem;
+    margin-top: 2rem;
+  }
+}
+@media screen and (max-width: 490px) {
+  footer {
+    padding: 3rem 1rem;
+  }
+  footer section .main-content .left-side {
+    min-width: auto;
+  }
+  footer section .contact-details figure {
+    display: none !important;
+  }
+  footer section .sd {
+    display: block !important;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
