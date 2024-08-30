@@ -22,6 +22,7 @@
 
     --background-color: white;
     --secoundary-background-color: #F3F6FF;
+    --custom-bg-faq-color:  white;
     --text-color: var(--gray-800);
     --secoundary-text-color: var(--gray-700);
     --stroke: var(--gray-300);
@@ -31,6 +32,7 @@
 .dark {
     --background-color: var(--gray-900);
     --secoundary-background-color: rgba(255, 255, 255, 0.04);
+    --custom-bg-faq-color: rgba(255, 255, 255, 0.04);
     --text-color: var(--white);
     --secoundary-text-color: rgba(255, 255, 255, 0.7);
     --stroke: #e2e5f12e;
