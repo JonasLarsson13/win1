@@ -7,11 +7,23 @@
     <link rel="icon" type="image/png" sizes="32x32" href="images/facicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/facicon/favicon-16x16.png">
     <link rel="manifest" href="images/facicon/site.webmanifest">
+
     <title>Silicon</title>
+
     <link rel="stylesheet" href="assets/styles.css">
     <link rel="stylesheet" href="assets/styles.css.map">
 </head>
+
 <body>
+    <nav id="small-devices-nav">
+        <div class="container">
+            <ul>
+                <li>
+                    <a href="index.html">Features</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
     <header class="navbar">
         <div class="container">
             <nav class="container__left">
@@ -25,6 +37,7 @@
                     <li><a href="#">Features</a></li>
                 </ul>
             </nav>
+
             <nav class="container__right">
                  <label class="container__right--switch">
                     <p>Dark mode</p>
@@ -35,7 +48,7 @@
                  <button>
                     <img src="/images/user.svg" alt="user" /> Sign in / up
                  </button>
-                 <figure class="hamburger-icon">
+                 <figure id="hamburger-icon">
                     <div></div>
                     <div></div>
                     <div></div>
@@ -43,12 +56,13 @@
             </nav>
         </div>
     </header>
-    <main>
 
+    <main>
         <section class="hero">
             <h1 class="hero--hero-mobile">
                 Manage All Your Money in One App
             </h1>
+
             <div class="hero__container">
                 <aside>
                     <div class="hero-text__top">
@@ -139,6 +153,7 @@
                         <p>Discover more</p>
                     </div>
                 </aside>
+
                 <img src="images/two-phones.svg" alt="Two phones" />
             </div>
         </section>
@@ -371,6 +386,7 @@
             </div>
         </section>
     </main>
+
     <footer>
         <section>
             <header class="small-devices-header">
@@ -382,15 +398,18 @@
                     Still have unanswered questions and need to get in touch?
                 </p>
             </header>
+
             <article class="main-content">
                 <aside class="left-side">
                     <h1>
                         Any questions?<br />
                         Check out the FAQs
                     </h1>
+
                     <p class="desktop">
                         Still have unanswered questions and need to get in touch?
                     </p>
+
                     <div class="contact-details">
                         <figure>
                             <img src="images/icons/phone-purp.svg" alt="Contact by Phone" />
@@ -404,6 +423,7 @@
                                 </svg>
                             </button>
                         </figure>
+
                         <figure>
                             <img src="images/icons/message-green.svg" alt="Contact by Other" />
                             <p>
@@ -416,13 +436,14 @@
                                 </svg>
                             </button>
                         </figure>
+
                         <button class="custom-btn sd">
                             Contact us now
                         </button>
                     </div>
                 </aside>
 
-                <aside class="right-side">
+                <aside class="right-side" id="faqs">
                     <div>
                         <header>
                             <h3>
