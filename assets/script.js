@@ -16,3 +16,24 @@ window.addEventListener("scroll", function () {
     header.classList.remove("scrolled");
   }
 });
+
+document.getElementById("faqs").addEventListener("click", async function (e) {
+  const allElements = this.querySelectorAll("div");
+  await allElements.forEach((element) => {
+    if (element !== e.target.parentElement) {
+      element.classList.remove("active");
+    }
+  });
+
+  const divElement = e.target.parentElement;
+  divElement.classList.toggle("active");
+});
+
+document
+  .getElementById("hamburger-icon")
+  .addEventListener("click", function () {
+    const nav = document.getElementById("small-devices-nav");
+    nav.classList.toggle("active");
+
+    this.classList.toggle("open");
+  });
